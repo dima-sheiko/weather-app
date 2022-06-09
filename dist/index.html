@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" ref="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <img class="page-logo" src="assets/logo.svg" alt="site logo">
+      <h1 class="page-name">Weather App</h1>
+    </header>
+    <main>
+      <form class="form" id="search-form">
+        <input class="input" id="search-input" type="text" placeholder="Enter city name">
+      </form>
+      <div class="search-result" id="searchResult">
+        <h3 id="cityName"></h3>
+        <p id="skyState"></p>
+        <p class="degree" id="temperature"></p>
+        <p class="degree" id="feelsLike"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
