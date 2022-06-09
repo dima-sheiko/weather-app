@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-image: url('assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Header */
+
+header {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-logo {
+  height: 70px;
+}
+
+.page-name {
+  font-family: 'Joan', serif;
+  font-size: 70px;
+  color: white;
+}
+
+/* Main */
+
+main {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.form {
+  text-align: center;
+}
+
+.input {
+  padding: 20px 25px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.search-result {
+  display: none;
+  color: white;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.search-result.active {
+  display: block;
+}
+
+.search-result h3 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.search-result p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Media Queries */
+
+@media (max-width: 510px) {
+  .page-name {
+    font-size: 40px;
+  }
+
+  .input {
+    font-size: 18px;
+  }
+
+  .search-result h3 {
+    font-size: 40px;
+    word-break: break-all;
+  }
+}
+
